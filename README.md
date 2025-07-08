@@ -28,3 +28,4 @@ Notion: https://kimsoobin1602.notion.site/217957a41faf8011aaa8da76eec79cb0?sourc
 
 허강석
 
+허강석 / 전자전기공학부 / 2022111860
