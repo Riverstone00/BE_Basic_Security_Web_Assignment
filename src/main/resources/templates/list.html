@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>게시판 목록</title>
+</head>
+<body>
+<h1>📋 게시글 목록</h1>
+<a href="/post/new">➕ 새 글 작성</a>
+<ul>
+  <li th:each="post : ${posts}">
+    <a th:href="@{/post/{id}(id=${post.id})}" th:text="${post.title}">제목</a>
+    <span> | </span>
+    <a th:href="@{/post/edit/{id}(id=${post.id})}">✏️ 수정</a>
+    <a th:href="@{/post/delete/{id}(id=${post.id})}">🗑️ 삭제</a>
+  </li>
+</ul>
+</body>
+</html>
